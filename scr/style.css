@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(223, 221, 206);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+main {
+    margin: 5%;
+}
+nav {
+    margin-left: auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+.logo {
+    width: 15%;
+    top: 90px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner h1 {
+  position: absolute; /* posiciona sobre a imagem */
+  top: 30%;
+  left: 70%;
+  color: white;
+  background-color: green;
+}
+
+.propaganda {
+    width: 100%;
+    height: 70%;
+}
+
+h1, h2 {
+    color: green;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    width: 40%;
+}
+
+.btn-enviar {
+    background-color: green;
+    color: white;
+    width: 10%;
+    border-radius: 6px;
+
+}
+
+footer {
+    background-color: rgb(223, 221, 206);
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+}
