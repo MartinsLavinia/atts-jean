@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Universidade Unes</title>
-</head>
-<body>
-    <header>
-        <img class="logo" src="imagens/logo_UNES.png" alt="Logo universidade UNES">
+{% extends 'base.html' %}
 
-        <nav>
-            <ul class="menu">
-                <li> <a href="index.html">Home</a></li>
-                <li><a href="quem_somos.html">Quem Somos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% block conteudo %}
     <div class="banner">
-        <img class="propaganda" src="imagens/UNES_propaganda.png" alt="imagem sala de engenharia da UNES">
+        <img class="propaganda" src="{{url_for('static', filename='imagens/UNES_propaganda.png')}}" alt="imagem sala de engenharia da UNES">
         <h1 style="position: absolute; font-size: 40px; padding: 15px;">Onde grandes projetos começam</h1>
     </div>
 
@@ -43,9 +26,4 @@
             </ul>
         </section>
     </main>
-
-    <footer>
-        <h3>@Todos os direitos reservados</h3>
-    </footer>
-</body>
-</html>
+    {% endblock %}

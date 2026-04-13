@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Quem Somos UNES</title>
-</head>
-<body>
-    <header>
-        <img class="logo" src="imagens/logo_UNES.png" alt="Logo universidade UNES">
+{% extends 'base.html' %}
 
-        <nav>
-            <ul class="menu">
-                <li> <a href="index.html">Home</a></li>
-                <li><a href="quem_somos.html">Quem Somos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% block conteudo %}
 
     <main>
         <section>
@@ -39,7 +22,7 @@
                 <li>Flexibilidade curricular e internacionalização</li>
             </ol>
 
-            <img id="motivos_estudo" src="./imagens/livros.png" alt="livros empilhados">
+            <img id="motivos_estudo" src="{{url_for('static', filename='imagens/livros.png')}}" alt="livros empilhados">
         </section>
 
         <br>
@@ -53,8 +36,4 @@
         </section>
     </main>
 
-    <footer>
-        <h3>@Todos os direitos reservados</h3>
-    </footer>
-</body>
-</html>
+    {% endblock %}
