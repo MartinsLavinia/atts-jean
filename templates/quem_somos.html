@@ -2,34 +2,43 @@
 
     {% block conteudo %}
 
-    <main>
-        <section>
-            <h1>Quem Somos</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum temporibus ut provident in minima. Autem minima unde soluta incidunt magnam modi recusandae, eaque officia nemo deserunt aspernatur et sapiente blanditiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, enim! Laudantium labore suscipit eaque, consectetur aut iusto doloribus? Dolorum ea autem minima dignissimos unde. Voluptatem accusamus nemo nostrum asperiores maiores?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum asperiores natus. Sed eos sunt, dolores asperiores pariatur aspernatur quis dicta voluptas dolorem id, magnam autem magni. Ratione, vel nulla!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo vero at, itaque recusandae expedita iste voluptate fuga laborum porro quisquam distinctio ab nisi voluptatem. Hic eius nesciunt blanditiis atque.
-            </p>
+    <main class="container py-4">
+        <section class="mb-5">
+            <h1 class="display-4 mb-3">Quem Somos</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum temporibus ut provident in minima. Autem minima unde soluta incidunt magnam modi recusandae, eaque officia nemo deserunt aspernatur et sapiente blanditiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, enim! Laudantium labore suscipit eaque, consectetur aut iusto doloribus? Dolorum ea autem minima dignissimos unde. Voluptatem accusamus nemo nostrum asperiores maiores?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odit ex error iure architecto atque qui amet tempora voluptate dolorum fugiat et corporis eius sapiente, porro, distinctio minus dicta neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum alias placeat adipisci beatae exercitationem, ducimus quaerat harum voluptatibus, consequuntur magnam! Error quibusdam similique quasi repellendus accusamus itaque sunt beatae!</p>
         </section>
 
-        <h1>5 Motivos para estudar</h1> <!--Coloquei aqui pra n entrar dentro do section e pegar o efeito de flexbox-->
-        <section class="sessao_estudos">
-            <ol>
-                <li>Corpo docente especializado</li>
-                <li>Laboratórios e infraestrutura avançada</li>
-                <li>Parcerias com a indústria</li>
-                <li>Programas de inovação e empreendedorismo</li>
-                <li>Flexibilidade curricular e internacionalização</li>
-            </ol>
+        <div class="mb-4">
+            <h1 class="display-6 mb-3">5 Motivos para estudar</h1>
+            <section class="sessao_estudos row align-items-center">
+                <div class="col-12 col-md-6">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Corpo docente especializado</li>
+                        <li class="list-group-item">Laboratórios e infraestrutura avançada</li>
+                        <li class="list-group-item">Parcerias com a indústria</li>
+                        <li class="list-group-item">Programas de inovação e empreendedorismo</li>
+                        <li class="list-group-item">Flexibilidade curricular e internacionalização</li>
+                    </ol>
+                </div>
+                <div class="col-12 col-md-6 text-center mt-3 mt-md-0">
+                    <img id="motivos_estudo" class="img-fluid rounded" src="{{url_for('static', filename='imagens/livros.png')}}" alt="livros empilhados">
+                </div>
+            </section>
+        </div>
 
-            <img id="motivos_estudo" src="{{url_for('static', filename='imagens/livros.png')}}" alt="livros empilhados">
-        </section>
+        <hr class="my-4">
 
-        <br>
-        <hr>
+        <section class="mb-5">
+            <h1 class="display-4 mb-3">Objetivos</h1>
 
-        <section>
-            <h1>Objetivos</h1>
+            <p>Progresso de conclusão dos nossos objetivos</p>
+            <div class="progress mb-3" style="height: 25px; border-radius: 15px; background-color: #e9ecef;">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style="width: 60%; border-radius: 15px;">
+                    <span class="text-white fw-bold">60%</span>
+                </div>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eveniet fuga nihil explicabo aliquam laboriosam reiciendis repellendus magni cupiditate. Culpa soluta officiis exercitationem quos iure maiores, fugit rerum praesentium quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ducimus ipsa laborum nihil repudiandae voluptatem laboriosam officiis neque quidem fuga aspernatur atque, doloribus aperiam tempore doloremque saepe iusto totam esse.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, hic. Quaerat perferendis commodi quis veniam exercitationem tenetur ab itaque explicabo pariatur odit quidem minima molestiae reiciendis vitae, magnam repudiandae enim!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus maxime error quasi doloribus quam. Tenetur fugiat vel consequatur obcaecati nulla quod temporibus facere repellendus atque. Expedita ea at sapiente nam.</p>

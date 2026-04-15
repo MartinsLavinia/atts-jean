@@ -1,26 +1,31 @@
 {% extends 'base.html' %}
 
     {% block conteudo %}
-    <main>
-        <section>
-            <h1>Entre em Contato</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem nesciunt possimus, nam excepturi asperiores facilis cupiditate, incidunt illo eaque ad quam quae neque reiciendis tenetur ea voluptas quia fugit!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quod unde consectetur eligendi nihil modi ipsam. Amet quia quam impedit placeat ipsum quaerat ad accusamus! Earum sed laborum aspernatur officia.</p>
-            <hr>
-            <br>
+    <main class="container py-4">
+        <section class="row">
+            <div class="col-12 col-md-10 col-lg-8">
+                <h1 class="mb-3">Entre em Contato</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem nesciunt possimus, nam excepturi asperiores facilis cupiditate, incidunt illo eaque ad quam quae neque reiciendis tenetur ea voluptas quia fugit!</p>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quod unde consectetur eligendi nihil modi ipsam. Amet quia quam impedit placeat ipsum quaerat ad accusamus! Earum sed laborum aspernatur officia.</p>
+                <hr class="my-4">
 
-            <div class="container">
                 <form>
-                    <label for="femail">Seu e-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <div class="mb-3">
+                        <label for="femail" class="form-label">Seu e-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
 
-                    <label for="fassunto">Assunto:</label>
-                    <input type="text" id="assunto" name="assunto">
+                    <div class="mb-3">
+                        <label for="fassunto" class="form-label">Assunto:</label>
+                        <input type="text" class="form-control" id="assunto" name="assunto">
+                    </div>
 
-                    <label for="fdescricao">Descrição:</label>
-                    <textarea type="textarea" id="descricao" name="descricao"></textarea>
+                    <div class="mb-3">
+                        <label for="fdescricao" class="form-label">Descrição:</label>
+                        <textarea class="form-control" id="descricao" name="descricao" rows="4"></textarea>
+                    </div>
 
-                    <input type="submit" class="btn-enviar">
+                    <input type="submit" class=" btn-enviar">
                 </form>
             </div>
         </section>
